@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Team Member</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="assets/css/raleway-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+	<!--=============================== fonts ==========================================-->
+	<link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('assets/images/ablock.jpg')">
+		<div class="wizard-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="#" method="post">
+					
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<span class="step-icon"><i class="fas fa-user-plus"></i></span>
+			            	<span class="step-text">Add Team Member</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="">Team Member Full Name</label>
+										<input type="text" name="team_member_name" id="" placeholder="Full Name" class="form-control"  required>
+									</div>
+									<div class="form-holder form-holder-2">
+										<label for="=">Team Member Id Number</label>
+										<input type="text" name="team_member_id" id="" placeholder="Team Member Id Number" class="form-control"  required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="">Year</label>
+										<select name="year" id="card-type" class="form-control" required>
+											<option value="" disabled selected>Select Year</option>
+											<option value="1">1st</option>
+											<option value="2">2nd</option>
+											<option value="3">3rd</option>
+											<option value="4">4th</option>
+										</select>
+									</div>
+									<div class="form-holder form-holder-2">
+										<label for="">Branch</label>
+										<select name="branch" id="card-type" class="form-control" required>
+											<!--<option value="" disabled selected>Select Your Branch</option>-->
+											<option value="CSE">CSE</option>
+											<option value="ECE">ECE</option>
+											<option value="IT">IT</option>
+											<option value="EEE">EEE</option>
+											<option value="MECH">MECH</option>
+											<option value="CIVIL">CIVIL</option>
+										</select>
+									</div>
+								</div>								
+							</div>
+			            </section>
+				    </div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+		
+		   $("#student").click(function(){
+			$("#student_branch_section").show();
+			$("#fac_branch").hide();
+					
+		   });
+		   $("#faculty").click(function(){
+				$("#student_branch_section").hide();
+				$("#fac_branch").show();
+		
+					
+		   });
+		});
+		</script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="assets/js/jquery.steps.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
